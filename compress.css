@@ -1,0 +1,83 @@
+.aura-page-header {
+  background-color: #131436;
+}
+.aura-page-header .site-title {
+  color: #e9eaff;
+}
+.aura-page-header .site-header-container .site-title > a {
+  color: #e9eaff;
+}
+.aura-page-header .header-aside i {
+  color: #e9eaff;
+}
+.sticky-header .aura-page-header {
+  box-shadow: none;
+}
+.sticky-header .aura-page-header.has-scrolled {
+  box-shadow: none;
+}
+body[auraclass="aura-body-page"] .aura-page-header .user-wrap.menu-item-has-children .user-link .user-name {
+  color: #e9eaff;
+}
+body[auraclass="aura-body-page"] .aura-page-header .user-wrap.menu-item-has-children.selected > .user-link:before {
+  background-color: #131436;
+}
+body[auraclass="aura-body-page"] .aura-page-header .user-wrap.menu-item-has-children > .user-link:hover:before {
+  background-color: #1b1c42;
+}
+body[auraclass="aura-body-page"] .aura-page-header .sub-menu,
+.site-header ul.submenu {
+  background-color: #1b1c42;
+}
+body[auraclass="aura-body-page"] .aura-page-header .sub-menu li:hover > a {
+  background-color: #131436;
+  color: #e9eaff;
+}
+body[auraclass="aura-body-page"] .aura-page-header .wrapper li .wrapper .ab-submenu {
+  background-color: #131436;
+  color: #e9eaff;
+}
+body[auraclass="aura-body-page"] .sub-menu a {
+  color: #e9eaff;
+}
+body[auraclass="aura-body-page"] .user-wrap-container .sub-menu-inner > li > a {
+  color: #e9eaff;
+}
+/* ==========================
+buddypanel  style 
+=============================*/
+body[auraclass="aura-body-page"] .aura-buddypanel {
+  background-color: #131436;
+  color: #e9eaff;
+  border-right: solid;
+  border-right-width: 1px;
+  border-right-color: #1b1c42;
+}
+body[auraclass="aura-body-page"] .panel-head {
+  background-color: #131436;
+}
+body[auraclass="aura-body-page"] .aura-buddypanel .side-panel-menu a {
+  color: #e9eaff;
+  background-color: #131436;
+}
+body[auraclass="aura-body-page"] .aura-buddypanel .side-panel-menu li:not(.current-menu-item) a:hover {
+  color: #e9eaff;
+  background-color: #1b1c42;
+}
+body[auraclass="aura-body-page"] .aura-buddypanel .side-panel-menu li.current-menu-item > a {
+  background-color: #4dd0b9;
+  color: #e9eaff;
+}
+body[auraclass="aura-body-page"] .aura-buddypanel .bb-toggle-panel {
+  color: #e9eaff;
+}
+/* ==========================
+page style 
+=============================*/
+.aura-page {
+  background-color: #131436;
+}
+.aura-footer-page {
+  background: #131436;
+  color: #e9eaff;
+}

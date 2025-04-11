@@ -1,0 +1,114 @@
+/*
+Theme Name: BuddyBoss Aura
+Theme URI: https://ueslei.pro/buddyBoss-aura
+Template: buddyboss-theme
+Author: Ueslei Pro
+Author URI: https://ueslei.pro
+Description: This is BuddyBoss version aura based on BuddyBoss Theme
+Version: 2.7.90.1740320550
+Updated: 2025-02-23 14:22:30
+
+*/
+/* import app.css */
+
+:root {
+  --primary-color: #131436;
+  --secondary-color: #1b1c42;
+  --tertiary-color: #131436;
+
+  --primary-font-color: #e9eaff;
+
+}
+@import url("app.css");
+/* BuddyBoss Aura Theme CSS */
+
+/* ==========================
+header style 
+=============================*/
+.aura-page-header{
+  background-color: var(--primary-color);
+}
+.aura-page-header .site-title  {
+  color: var(--primary-font-color);
+}
+.aura-page-header  .site-header-container .site-title>a {
+  color: var(--primary-font-color);
+}
+.aura-page-header  .header-aside i {
+  color: var(--primary-font-color);
+}
+.sticky-header .aura-page-header{
+  box-shadow: none;
+}
+
+.sticky-header .aura-page-header.has-scrolled{
+  box-shadow: none;
+} 
+body[auraclass="aura-body-page"] .aura-page-header .user-wrap.menu-item-has-children .user-link .user-name {
+  color: var(--primary-font-color);
+}
+
+body[auraclass="aura-body-page"] .aura-page-header .user-wrap.menu-item-has-children.selected>.user-link:before{
+  background-color: var(--primary-color);
+}
+
+body[auraclass="aura-body-page"] .aura-page-header .user-wrap.menu-item-has-children>.user-link:hover:before {
+
+  background-color: var(--secondary-color);
+
+}
+body[auraclass="aura-body-page"] .aura-page-header .sub-menu, .site-header ul.submenu {
+
+  background-color: var(--secondary-color);
+
+}
+
+body[auraclass="aura-body-page"] .aura-page-header  .sub-menu li:hover>a {
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
+}
+body[auraclass="aura-body-page"] .aura-page-header .wrapper li .wrapper .ab-submenu{
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
+}
+
+body[auraclass="aura-body-page"] .sub-menu a {
+  color: var(--primary-font-color);
+}
+body[auraclass="aura-body-page"]  .user-wrap-container .sub-menu-inner>li>a {
+  color: var(--primary-font-color);
+}
+
+
+
+/* ==========================
+buddypanel  style 
+=============================*/
+body[auraclass="aura-body-page"] .aura-buddypanel{
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
+  border-right: solid;
+  border-right-width: 1px;
+  border-right-color: var(--secondary-color);
+}
+
+body[auraclass="aura-body-page"] .panel-head {
+  background-color: var(--primary-color);
+}
+body[auraclass="aura-body-page"] .aura-buddypanel  .side-panel-menu a {
+  color: var(--primary-font-color);
+  background-color: var(--primary-color);
+}
+
+body[auraclass="aura-body-page"] .aura-buddypanel .side-panel-menu li:not(.current-menu-item) a:hover {
+  color: var(--primary-font-color);
+  background-color: var(--secondary-color);
+}
+
+/* ==========================
+page style 
+=============================*/
+.aura-page {
+  background-color: var(--primary-color);
+}
+

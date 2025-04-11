@@ -1,0 +1,41 @@
+// out: false
+
+/* ==========================
+buddypanel  style 
+=============================*/
+body[auraclass="aura-body-page"] .aura-buddypanel {
+  background-color: @primary-color;
+  color: @primary-font-color;
+  border-right: solid;
+  border-right-width: 1px;
+  border-right-color: @secondary-color;
+}
+
+body[auraclass="aura-body-page"] .panel-head {
+  background-color: @primary-color;
+}
+body[auraclass="aura-body-page"] .aura-buddypanel .side-panel-menu a {
+  color: @primary-font-color;
+  background-color: @primary-color;
+}
+
+body[auraclass="aura-body-page"]
+  .aura-buddypanel
+  .side-panel-menu
+  li:not(.current-menu-item)
+  a:hover {
+  color: @primary-font-color;
+  background-color: @secondary-color;
+}
+
+body[auraclass="aura-body-page"] .aura-buddypanel .side-panel-menu li.current-menu-item>a {
+  background-color: @primary-accent-color;
+  color: @primary-font-color;
+}
+body[auraclass="aura-body-page"] .aura-buddypanel  .bb-toggle-panel {
+  color: @primary-font-color;
+}
+
+body[auraclass="aura-body-page"] .aura-buddypanel .bb-toggle-panel:hover {
+  background-color: @secondary-color;
+}
