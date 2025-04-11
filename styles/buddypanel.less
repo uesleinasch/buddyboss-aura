@@ -1,41 +1,66 @@
 // out: false
 
 /* ==========================
-buddypanel  style 
+buddypanel style - DRY version
 =============================*/
-body[auraclass="aura-body-page"] .aura-buddypanel {
-  background-color: @primary-color;
-  color: @primary-font-color;
-  border-right: solid;
-  border-right-width: 1px;
-  border-right-color: @secondary-color;
+
+// Mixin para estilos do buddypanel
+.buddypanel-styles(@body-class, @panel-class) {
+  body[auraclass="@{body-class}"] {
+    .@{panel-class} {
+      background-color: @primary-color;
+      color: @primary-font-color;
+      border-right: solid;
+      border-right-width: 1px;
+      border-right-color: @secondary-color;
+      
+      // Panel head
+      &  .panel-head {
+        background-color: @primary-color;
+      }
+      
+      // Menu styles
+      .side-panel-menu {
+        a {
+          color: @primary-font-color;
+          background-color: @primary-color;
+        }
+        
+        li {
+          &:not(.current-menu-item) a:hover {
+            color: @primary-font-color;
+            background-color: @secondary-color;
+          }
+          
+          &.current-menu-item > a {
+            background-color: @primary-accent-color;
+            color: @primary-font-color;
+          }
+        }
+      }
+      
+      // Toggle panel
+      .bb-toggle-panel {
+        color: @primary-font-color;
+        
+        &:hover {
+          background-color: @secondary-color;
+        }
+      }
+    }
+  }
 }
 
-body[auraclass="aura-body-page"] .panel-head {
-  background-color: @primary-color;
-}
-body[auraclass="aura-body-page"] .aura-buddypanel .side-panel-menu a {
-  color: @primary-font-color;
-  background-color: @primary-color;
-}
+// Aplicando o mixin para a página
+.buddypanel-styles(aura-body-page, aura-buddypanel);
+.buddypanel-styles(aura-body-archive-post, aura-buddypanel);
+.buddypanel-styles(aura-body-single-post, aura-buddypanel);
+.buddypanel-styles(aura-body-single-courses, aura-buddypanel);
 
-body[auraclass="aura-body-page"]
-  .aura-buddypanel
-  .side-panel-menu
-  li:not(.current-menu-item)
-  a:hover {
-  color: @primary-font-color;
-  background-color: @secondary-color;
-}
 
-body[auraclass="aura-body-page"] .aura-buddypanel .side-panel-menu li.current-menu-item>a {
-  background-color: @primary-accent-color;
-  color: @primary-font-color;
-}
-body[auraclass="aura-body-page"] .aura-buddypanel  .bb-toggle-panel {
-  color: @primary-font-color;
-}
+/* ==========================
+buddypanel style for blog
+=============================*/
+// Aqui você pode adicionar o estilo específico para o blog usando o mesmo mixin
+// .buddypanel-styles(aura-body-blog, aura-buddypanel-blog);
 
-body[auraclass="aura-body-page"] .aura-buddypanel .bb-toggle-panel:hover {
-  background-color: @secondary-color;
-}

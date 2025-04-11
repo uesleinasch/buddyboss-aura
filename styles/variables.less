@@ -1,31 +1,79 @@
 // out: false
 @primary-color: #131436;
 @secondary-color: #1b1c42;
-@tertiary-color: #131436;
-@primary-font-color: #e9eaff;
+@tertiary-color: #1e2132;
+
+// Cores de texto otimizadas para fundos escuros
+@primary-font-color: #e2e3ec;   // Branco suave com menor saturação (menos azul)
+@secondary-font-color: #b8b9d0;  // Tom médio com bom contraste
+@tertiary-font-color: #7f8196;   // Tom mais escuro para elementos secundários
+@light-font-color: #f0f1fa;      // Branco suave para destaques (não 100% branco)
+@dark-font-color: #000000;       // Mantido para uso em áreas claras
 
 @primary-accent-color: #4dd0b9;
 
-// Font sizes in px
+// Adicionando novas variáveis para elementos de UI em fundos escuros
+@link-color: #6dbbfa;           // Azul mais suave para links
+@link-hover-color: #8dceff;     // Cor de hover mais clara
+@muted-text-color: #9395a7;     // Para textos menos importantes
+@border-color-light: #393a5a;   // Para bordas sutis em fundo escuro
 
-@font-size-xxs: 10px;
-@font-size-xs: 12px;
-@font-size-sm: 14px;
-@font-size-md: 16px;
-@font-size-lg: 18px;
-@font-size-xl: 20px;
-@font-size-xxl: 24px;
-@font-size-xxxl: 30px;
+// Font sizes in px - ajustados para o estilo Medium
+// O Medium usa uma escala tipográfica mais refinada
 
-// font famylies Inter
-@font-family: 'Inter', sans-serif;
-@font-family-heading: 'Inter', sans-serif;
-@font-family-body: 'Inter', sans-serif;
+@font-size-xxs: 11px;  // Pequenas notas de rodapé
+@font-size-xs: 13px;   // Metadados, timestamps
+@font-size-sm: 15px;   // Texto secundário
+@font-size-md: 18px;   // Corpo de texto principal (Medium usa 18-21px)
+@font-size-lg: 21px;   // Parágrafos maiores, citações
+@font-size-xl: 24px;   // Subtítulos
+@font-size-xxl: 28px;  // Títulos secundários
+@font-size-xxxl: 34px; // Títulos principais
 
-// font weights
+// Tamanhos de fontes para headings - estilo Medium
+@font-size-heading-xxs: 13px;  // Pequenos subtítulos
+@font-size-heading-xs: 16px;   // H6
+@font-size-heading-sm: 20px;   // H5
+@font-size-heading-md: 24px;   // H4
+@font-size-heading-lg: 34px;   // H3, H2
+@font-size-heading-xl: 42px;   // H1
+
+// Line heights - ajustadas para o padrão Medium
+// Medium usa aproximadamente 1.4-1.6x o tamanho da fonte para texto regular
+@line-height-xxs: 16px;   // ~1.45x
+@line-height-xs: 20px;    // ~1.54x
+@line-height-sm: 24px;    // ~1.6x
+@line-height-md: 28px;    // ~1.55x
+@line-height-lg: 32px;    // ~1.52x
+@line-height-xl: 36px;    // ~1.5x
+
+// Line heights para headings - proporção menor (1.2-1.4x) para melhor aparência visual
+// O Medium geralmente usa line-heights mais condensados para headings
+@line-height-heading-xxs: 18px;   // ~1.38x do @font-size-heading-xxs
+@line-height-heading-xs: 22px;    // ~1.37x do @font-size-heading-xs
+@line-height-heading-sm: 26px;    // ~1.3x do @font-size-heading-sm
+@line-height-heading-md: 30px;    // ~1.25x do @font-size-heading-md
+@line-height-heading-lg: 42px;    // ~1.23x do @font-size-heading-lg
+@line-height-heading-xl: 50px;    // ~1.19x do @font-size-heading-xl
+
+// Famílias de fontes - Medium usa principalmente Charter e Helvetica/Arial
+// Charter para conteúdo de leitura longa e sans-serif para UI
+
+@font-family-ui: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@font-family-heading: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@font-family-body: 'Libre Baskerville', Charter, Georgia, serif;
+
+// Font weights - ajustados para o padrão Medium
 @font-weight-regular: 400;
 @font-weight-medium: 500;
 @font-weight-bold: 700;
-@font-weight-black: 900;
+@font-weight-black: 800; // Medium raramente usa black weight, reduzido para 800
 @font-weight-light: 300;
-@font-weight-thin: 100;
+@font-weight-thin: 200; // Aumentado para melhor legibilidade
+
+// Adicionando variáveis de espaçamento verticais do Medium
+@vertical-spacing-xs: 8px;
+@vertical-spacing-sm: 16px;
+@vertical-spacing-md: 24px;
+@vertical-spacing-lg: 32px;
+@vertical-spacing-xl: 42px;

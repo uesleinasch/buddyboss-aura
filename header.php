@@ -11,8 +11,23 @@
  */
 ?>
 <?php
-$aura__view = get_post_type() ? 'aura-' . get_post_type() : '';
+// is archive
+
+if(is_single()){
+	$aura_view = get_post_type() ? 'aura-single-' . get_post_type() : '';
+}elseif(is_archive()){
+	$aura_view = get_post_type() ? 'aura-archive-' . get_post_type() : '';
+}else{
+	$aura_view = get_post_type() ? 'aura-' . get_post_type() : '';
+}
 $aura_body = get_post_type() ? 'aura-body-' . get_post_type() : '';
+
+if(is_single()){
+	$aura_body = get_post_type() ? 'aura-body-single-' . get_post_type() : '';
+}else if(is_archive()){
+	$aura_body = get_post_type() ? 'aura-body-archive-' . get_post_type() : '';
+}
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -35,11 +50,11 @@ $aura_body = get_post_type() ? 'aura-body-' . get_post_type() : '';
 
 	endif; ?>
 
-	<div id="page" class="site <?php echo $aura__view ?>">
+	<div id="page" class="site <?php echo $aura_view ?>">
 
 		<?php do_action(THEME_HOOK_PREFIX . 'before_header'); ?>
 
-		<header aura-header id="masthead" class="<?php echo apply_filters('buddyboss_site_header_class', 'site-header site-header--bb'); ?>  <?php echo $aura__view . '-header' ?>">
+		<header aura-header id="masthead" class="<?php echo apply_filters('buddyboss_site_header_class', 'site-header site-header--bb'); ?>  <?php echo $aura_view . '-header' ?>">
 			<?php do_action(THEME_HOOK_PREFIX . 'header'); ?>
 		</header>
 
@@ -47,7 +62,7 @@ $aura_body = get_post_type() ? 'aura-body-' . get_post_type() : '';
 
 		<?php do_action(THEME_HOOK_PREFIX . 'before_content'); ?>
 
-		<div id="content" class="site-content">
+		<div id="content" class="site-content <?php echo $aura_view . '-content' ?>">
 
 			<?php do_action(THEME_HOOK_PREFIX . 'begin_content'); ?>
 
