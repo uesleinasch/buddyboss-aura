@@ -41,36 +41,36 @@
         }
         
         &.selected > .user-link:before {
-          background-color: @primary-color;
+          background-color: @primary-color !important;
         }
         
         > .user-link:hover:before {
-          background-color: @secondary-color;
+          background-color: @secondary-color !important;
         }
       }
       
       .sub-menu {
-        background-color: @secondary-color;
+        background-color: @secondary-color !important;
         
         li:hover > a {
-          background-color: @primary-color;
-          color: @primary-font-color;
+          background-color: @primary-color !important;
+          color: @primary-font-color !important;
         }
       }
       
       .wrapper li .wrapper .ab-submenu {
-        background-color: @primary-color;
-        color: @primary-font-color;
+        background-color: @primary-color !important;
+        color: @primary-font-color !important;
       }
     }
     
     // Estilos globais para sub-menus dentro do contexto do body
     .sub-menu a {
-      color: @primary-font-color;
+      color: @primary-font-color !important;
     }
     
     .user-wrap-container .sub-menu-inner > li > a {
-      color: @primary-font-color;
+      color: @primary-font-color !important;
     }
   }
 }
@@ -80,6 +80,23 @@
   background-color: @secondary-color;
 }
 
+.aura-page-header.user-wrap.menu-item-has-children ul#header-my-account-menu a {
+  color: @primary-font-color !important;
+}
+.bb-template-v2 .user-wrap.menu-item-has-children ul#header-my-account-menu a {
+  color: @primary-font-color !important;
+}
+.bb-template-v2 .user-wrap.menu-item-has-children ul#header-my-account-menu a:hover {
+  color: @primary-font-color !important;
+  background-color: @tertiary-color !important;
+}
+body[auraclass="aura-body-page"] .bb-template-v2 .user-wrap.menu-item-has-children ul#header-my-account-menu a:hover {
+  color: @primary-font-color !important;
+  background-color: @tertiary-color !important;
+}
+body[auraclass="aura-body-page"] .bb-template-v2 .user-wrap.menu-item-has-children ul#header-my-account-menu a {
+  color: @primary-font-color !important;
+}
 // Aplicando os mixins para aura-page-header
 .header-base-styles(aura-page-header);
 .user-submenu-styles(aura-body-page, aura-page-header);

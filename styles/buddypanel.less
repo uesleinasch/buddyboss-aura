@@ -53,6 +53,10 @@ buddypanel style - DRY version
 .bb-dark-theme .panel-head{
   background-color: transparent !important
 }
+
+.bb-template-v2 .buddypanel .side-panel-menu li:not(.current-menu-item) a:hover i:not(.bb-icon-angle-down){
+  color: @primary-font-color;
+}
 // Aplicando o mixin para a página
 .buddypanel-styles(aura-body-page, aura-buddypanel);
 .buddypanel-styles(aura-body-archive-post, aura-buddypanel);

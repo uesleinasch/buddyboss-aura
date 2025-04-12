@@ -92,6 +92,23 @@
 .site-header ul.submenu {
   background-color: #1b1c42;
 }
+.aura-page-header.user-wrap.menu-item-has-children ul#header-my-account-menu a {
+  color: #e2e3ec !important;
+}
+.bb-template-v2 .user-wrap.menu-item-has-children ul#header-my-account-menu a {
+  color: #e2e3ec !important;
+}
+.bb-template-v2 .user-wrap.menu-item-has-children ul#header-my-account-menu a:hover {
+  color: #e2e3ec !important;
+  background-color: #1e2132 !important;
+}
+body[auraclass="aura-body-page"] .bb-template-v2 .user-wrap.menu-item-has-children ul#header-my-account-menu a:hover {
+  color: #e2e3ec !important;
+  background-color: #1e2132 !important;
+}
+body[auraclass="aura-body-page"] .bb-template-v2 .user-wrap.menu-item-has-children ul#header-my-account-menu a {
+  color: #e2e3ec !important;
+}
 .aura-page-header {
   background-color: #131436;
 }
@@ -114,27 +131,27 @@ body[auraclass="aura-body-page"] .aura-page-header .user-wrap.menu-item-has-chil
   color: #e2e3ec;
 }
 body[auraclass="aura-body-page"] .aura-page-header .user-wrap.menu-item-has-children.selected > .user-link:before {
-  background-color: #131436;
+  background-color: #131436 !important;
 }
 body[auraclass="aura-body-page"] .aura-page-header .user-wrap.menu-item-has-children > .user-link:hover:before {
-  background-color: #1b1c42;
+  background-color: #1b1c42 !important;
 }
 body[auraclass="aura-body-page"] .aura-page-header .sub-menu {
-  background-color: #1b1c42;
+  background-color: #1b1c42 !important;
 }
 body[auraclass="aura-body-page"] .aura-page-header .sub-menu li:hover > a {
-  background-color: #131436;
-  color: #e2e3ec;
+  background-color: #131436 !important;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-page"] .aura-page-header .wrapper li .wrapper .ab-submenu {
-  background-color: #131436;
-  color: #e2e3ec;
+  background-color: #131436 !important;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-page"] .sub-menu a {
-  color: #e2e3ec;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-page"] .user-wrap-container .sub-menu-inner > li > a {
-  color: #e2e3ec;
+  color: #e2e3ec !important;
 }
 .aura-archive-post-header {
   background-color: #131436;
@@ -158,27 +175,27 @@ body[auraclass="aura-body-archive-post"] .aura-archive-post-header .user-wrap.me
   color: #e2e3ec;
 }
 body[auraclass="aura-body-archive-post"] .aura-archive-post-header .user-wrap.menu-item-has-children.selected > .user-link:before {
-  background-color: #131436;
+  background-color: #131436 !important;
 }
 body[auraclass="aura-body-archive-post"] .aura-archive-post-header .user-wrap.menu-item-has-children > .user-link:hover:before {
-  background-color: #1b1c42;
+  background-color: #1b1c42 !important;
 }
 body[auraclass="aura-body-archive-post"] .aura-archive-post-header .sub-menu {
-  background-color: #1b1c42;
+  background-color: #1b1c42 !important;
 }
 body[auraclass="aura-body-archive-post"] .aura-archive-post-header .sub-menu li:hover > a {
-  background-color: #131436;
-  color: #e2e3ec;
+  background-color: #131436 !important;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-archive-post"] .aura-archive-post-header .wrapper li .wrapper .ab-submenu {
-  background-color: #131436;
-  color: #e2e3ec;
+  background-color: #131436 !important;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-archive-post"] .sub-menu a {
-  color: #e2e3ec;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-archive-post"] .user-wrap-container .sub-menu-inner > li > a {
-  color: #e2e3ec;
+  color: #e2e3ec !important;
 }
 .aura-single-post-header {
   background-color: #131436;
@@ -202,27 +219,27 @@ body[auraclass="aura-body-single-post"] .aura-single-post-header .user-wrap.menu
   color: #e2e3ec;
 }
 body[auraclass="aura-body-single-post"] .aura-single-post-header .user-wrap.menu-item-has-children.selected > .user-link:before {
-  background-color: #131436;
+  background-color: #131436 !important;
 }
 body[auraclass="aura-body-single-post"] .aura-single-post-header .user-wrap.menu-item-has-children > .user-link:hover:before {
-  background-color: #1b1c42;
+  background-color: #1b1c42 !important;
 }
 body[auraclass="aura-body-single-post"] .aura-single-post-header .sub-menu {
-  background-color: #1b1c42;
+  background-color: #1b1c42 !important;
 }
 body[auraclass="aura-body-single-post"] .aura-single-post-header .sub-menu li:hover > a {
-  background-color: #131436;
-  color: #e2e3ec;
+  background-color: #131436 !important;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-single-post"] .aura-single-post-header .wrapper li .wrapper .ab-submenu {
-  background-color: #131436;
-  color: #e2e3ec;
+  background-color: #131436 !important;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-single-post"] .sub-menu a {
-  color: #e2e3ec;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-single-post"] .user-wrap-container .sub-menu-inner > li > a {
-  color: #e2e3ec;
+  color: #e2e3ec !important;
 }
 .aura-single-courses-header {
   background-color: #131436;
@@ -246,27 +263,27 @@ body[auraclass="aura-body-single-courses"] .aura-single-courses-header .user-wra
   color: #e2e3ec;
 }
 body[auraclass="aura-body-single-courses"] .aura-single-courses-header .user-wrap.menu-item-has-children.selected > .user-link:before {
-  background-color: #131436;
+  background-color: #131436 !important;
 }
 body[auraclass="aura-body-single-courses"] .aura-single-courses-header .user-wrap.menu-item-has-children > .user-link:hover:before {
-  background-color: #1b1c42;
+  background-color: #1b1c42 !important;
 }
 body[auraclass="aura-body-single-courses"] .aura-single-courses-header .sub-menu {
-  background-color: #1b1c42;
+  background-color: #1b1c42 !important;
 }
 body[auraclass="aura-body-single-courses"] .aura-single-courses-header .sub-menu li:hover > a {
-  background-color: #131436;
-  color: #e2e3ec;
+  background-color: #131436 !important;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-single-courses"] .aura-single-courses-header .wrapper li .wrapper .ab-submenu {
-  background-color: #131436;
-  color: #e2e3ec;
+  background-color: #131436 !important;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-single-courses"] .sub-menu a {
-  color: #e2e3ec;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-single-courses"] .user-wrap-container .sub-menu-inner > li > a {
-  color: #e2e3ec;
+  color: #e2e3ec !important;
 }
 .aura-single-lesson-header {
   background-color: #131436;
@@ -290,33 +307,36 @@ body[auraclass="aura-body-single-lesson"] .aura-single-lesson-header .user-wrap.
   color: #e2e3ec;
 }
 body[auraclass="aura-body-single-lesson"] .aura-single-lesson-header .user-wrap.menu-item-has-children.selected > .user-link:before {
-  background-color: #131436;
+  background-color: #131436 !important;
 }
 body[auraclass="aura-body-single-lesson"] .aura-single-lesson-header .user-wrap.menu-item-has-children > .user-link:hover:before {
-  background-color: #1b1c42;
+  background-color: #1b1c42 !important;
 }
 body[auraclass="aura-body-single-lesson"] .aura-single-lesson-header .sub-menu {
-  background-color: #1b1c42;
+  background-color: #1b1c42 !important;
 }
 body[auraclass="aura-body-single-lesson"] .aura-single-lesson-header .sub-menu li:hover > a {
-  background-color: #131436;
-  color: #e2e3ec;
+  background-color: #131436 !important;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-single-lesson"] .aura-single-lesson-header .wrapper li .wrapper .ab-submenu {
-  background-color: #131436;
-  color: #e2e3ec;
+  background-color: #131436 !important;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-single-lesson"] .sub-menu a {
-  color: #e2e3ec;
+  color: #e2e3ec !important;
 }
 body[auraclass="aura-body-single-lesson"] .user-wrap-container .sub-menu-inner > li > a {
-  color: #e2e3ec;
+  color: #e2e3ec !important;
 }
 /* ==========================
 buddypanel style - DRY version
 =============================*/
 .bb-dark-theme .panel-head {
   background-color: transparent !important;
+}
+.bb-template-v2 .buddypanel .side-panel-menu li:not(.current-menu-item) a:hover i:not(.bb-icon-angle-down) {
+  color: #e2e3ec;
 }
 body[auraclass="aura-body-page"] .aura-buddypanel {
   background-color: #131436;
@@ -502,14 +522,28 @@ body[auraclass="aura-body-archive-post"] .aura-archive-post .page-title {
   color: #e2e3ec;
   line-height: 50px;
   font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin-bottom: 24px;
 }
 body[auraclass="aura-body-archive-post"] .aura-archive-post .entry-content p {
   font-size: 18px;
   line-height: 28px;
   font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #e2e3ec;
-  margin-bottom: 16px;
+}
+body[auraclass="aura-body-archive-post"] .aura-archive-post h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+body[auraclass="aura-body-archive-post"] .aura-archive-post h3 {
+  font-size: 21px;
+  line-height: 28px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+body[auraclass="aura-body-archive-post"] .aura-archive-post h4 {
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #e2e3ec;
 }
 body[auraclass="aura-body-archive-post"] .aura-archive-post .entry-meta {
   color: #b8b9d0;
@@ -544,7 +578,6 @@ body[auraclass="aura-body-single-post"] .aura_single_post {
 body[auraclass="aura-body-single-post"] .aura_single_post .entry-title {
   font-size: 42px;
   color: #e2e3ec;
-  line-height: 50px;
   font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 body[auraclass="aura-body-single-post"] .aura_single_post .post-related-posts {
@@ -572,22 +605,28 @@ body[auraclass="aura-body-single-post"] .aura_single_post .post-related-posts .e
   color: #4dd0b9;
 }
 body[auraclass="aura-body-single-post"] .aura_single_post .post-related-posts .entry-content {
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 28px;
   font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #e2e3ec;
 }
 body[auraclass="aura-body-single-post"] .aura_single_post h2 {
-  font-size: 28px;
-  color: #e2e3ec;
+  font-size: 24px;
   line-height: 32px;
   font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #e2e3ec;
 }
 body[auraclass="aura-body-single-post"] .aura_single_post h3 {
-  font-size: 24px;
-  color: #e2e3ec;
-  line-height: 32px;
+  font-size: 21px;
+  line-height: 28px;
   font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #e2e3ec;
+}
+body[auraclass="aura-body-single-post"] .aura_single_post h4 {
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #e2e3ec;
 }
 .aura-single-lesson-content p {
   font-size: 18px;
