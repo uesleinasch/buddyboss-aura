@@ -50,12 +50,16 @@ buddypanel style - DRY version
     }
   }
 }
-
+.bb-dark-theme .panel-head{
+  background-color: transparent !important
+}
 // Aplicando o mixin para a página
 .buddypanel-styles(aura-body-page, aura-buddypanel);
 .buddypanel-styles(aura-body-archive-post, aura-buddypanel);
 .buddypanel-styles(aura-body-single-post, aura-buddypanel);
 .buddypanel-styles(aura-body-single-courses, aura-buddypanel);
+.buddypanel-styles(aura-body-single-lesson, aura-buddypanel);
+
 
 
 /* ==========================

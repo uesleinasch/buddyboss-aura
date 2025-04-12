@@ -268,9 +268,56 @@ body[auraclass="aura-body-single-courses"] .sub-menu a {
 body[auraclass="aura-body-single-courses"] .user-wrap-container .sub-menu-inner > li > a {
   color: #e2e3ec;
 }
+.aura-single-lesson-header {
+  background-color: #131436;
+}
+.aura-single-lesson-header .site-title {
+  color: #e2e3ec;
+}
+.aura-single-lesson-header .site-header-container .site-title > a {
+  color: #e2e3ec;
+}
+.aura-single-lesson-header .header-aside i {
+  color: #e2e3ec;
+}
+.sticky-header .aura-single-lesson-header {
+  box-shadow: none;
+}
+.sticky-header .aura-single-lesson-header.has-scrolled {
+  box-shadow: none;
+}
+body[auraclass="aura-body-single-lesson"] .aura-single-lesson-header .user-wrap.menu-item-has-children .user-link .user-name {
+  color: #e2e3ec;
+}
+body[auraclass="aura-body-single-lesson"] .aura-single-lesson-header .user-wrap.menu-item-has-children.selected > .user-link:before {
+  background-color: #131436;
+}
+body[auraclass="aura-body-single-lesson"] .aura-single-lesson-header .user-wrap.menu-item-has-children > .user-link:hover:before {
+  background-color: #1b1c42;
+}
+body[auraclass="aura-body-single-lesson"] .aura-single-lesson-header .sub-menu {
+  background-color: #1b1c42;
+}
+body[auraclass="aura-body-single-lesson"] .aura-single-lesson-header .sub-menu li:hover > a {
+  background-color: #131436;
+  color: #e2e3ec;
+}
+body[auraclass="aura-body-single-lesson"] .aura-single-lesson-header .wrapper li .wrapper .ab-submenu {
+  background-color: #131436;
+  color: #e2e3ec;
+}
+body[auraclass="aura-body-single-lesson"] .sub-menu a {
+  color: #e2e3ec;
+}
+body[auraclass="aura-body-single-lesson"] .user-wrap-container .sub-menu-inner > li > a {
+  color: #e2e3ec;
+}
 /* ==========================
 buddypanel style - DRY version
 =============================*/
+.bb-dark-theme .panel-head {
+  background-color: transparent !important;
+}
 body[auraclass="aura-body-page"] .aura-buddypanel {
   background-color: #131436;
   color: #e2e3ec;
@@ -383,6 +430,34 @@ body[auraclass="aura-body-single-courses"] .aura-buddypanel .bb-toggle-panel {
 body[auraclass="aura-body-single-courses"] .aura-buddypanel .bb-toggle-panel:hover {
   background-color: #1b1c42;
 }
+body[auraclass="aura-body-single-lesson"] .aura-buddypanel {
+  background-color: #131436;
+  color: #e2e3ec;
+  border-right: solid;
+  border-right-width: 1px;
+  border-right-color: #1b1c42;
+}
+body[auraclass="aura-body-single-lesson"] .aura-buddypanel .panel-head {
+  background-color: #131436;
+}
+body[auraclass="aura-body-single-lesson"] .aura-buddypanel .side-panel-menu a {
+  color: #e2e3ec;
+  background-color: #131436;
+}
+body[auraclass="aura-body-single-lesson"] .aura-buddypanel .side-panel-menu li:not(.current-menu-item) a:hover {
+  color: #e2e3ec;
+  background-color: #1b1c42;
+}
+body[auraclass="aura-body-single-lesson"] .aura-buddypanel .side-panel-menu li.current-menu-item > a {
+  background-color: #4dd0b9;
+  color: #e2e3ec;
+}
+body[auraclass="aura-body-single-lesson"] .aura-buddypanel .bb-toggle-panel {
+  color: #e2e3ec;
+}
+body[auraclass="aura-body-single-lesson"] .aura-buddypanel .bb-toggle-panel:hover {
+  background-color: #1b1c42;
+}
 /* ==========================
 buddypanel style for blog
 =============================*/
@@ -400,10 +475,6 @@ page style
   background: #131436;
   color: #e2e3ec;
 }
-/* ==========================================================================
-   Estilos para Blog - Aura Theme
-   Otimizado com mixins parametrizados
-   ========================================================================== */
 /* Aplicando os mixins para posts de arquivo */
 .aura-archive-post-content {
   background: #131436;
@@ -468,13 +539,13 @@ body[auraclass="aura-body-single-post"] .aura_single_post {
   line-height: 28px;
   font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #e2e3ec;
+  font-weight: 300;
 }
 body[auraclass="aura-body-single-post"] .aura_single_post .entry-title {
   font-size: 42px;
   color: #e2e3ec;
   line-height: 50px;
   font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin-bottom: 24px;
 }
 body[auraclass="aura-body-single-post"] .aura_single_post .post-related-posts {
   margin-top: 42px;
@@ -486,17 +557,10 @@ body[auraclass="aura-body-single-post"] .aura_single_post .post-related-posts h3
   color: #e2e3ec;
   line-height: 42px;
   font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin-bottom: 24px;
 }
 body[auraclass="aura-body-single-post"] .aura_single_post .post-related-posts .post-inner-wrap {
   background: #1e2132;
   border: 1px solid #4dd0b9;
-  padding: 16px;
-  border-radius: 4px;
-  transition: transform 0.2s ease;
-}
-body[auraclass="aura-body-single-post"] .aura_single_post .post-related-posts .post-inner-wrap:hover {
-  transform: translateY(-3px);
 }
 body[auraclass="aura-body-single-post"] .aura_single_post .post-related-posts .entry-title a {
   font-size: 24px;
@@ -513,23 +577,38 @@ body[auraclass="aura-body-single-post"] .aura_single_post .post-related-posts .e
   font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #e2e3ec;
 }
-body[auraclass="aura-body-single-post"] .aura_single_post .post-related-posts .related-posts-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  grid-gap: 24px;
-  margin-top: 24px;
+body[auraclass="aura-body-single-post"] .aura_single_post h2 {
+  font-size: 28px;
+  color: #e2e3ec;
+  line-height: 32px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-body[auraclass="aura-body-single-post"] .aura_single_post .entry-content img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
+body[auraclass="aura-body-single-post"] .aura_single_post h3 {
+  font-size: 24px;
+  color: #e2e3ec;
+  line-height: 32px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-body[auraclass="aura-body-single-post"] .aura_single_post .entry-content blockquote {
-  border-left: 3px solid #4dd0b9;
-  padding-left: 24px;
-  font-style: italic;
-  color: #b8b9d0;
-  margin: 24px 0;
+.aura-single-lesson-content p {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 16px;
+}
+.aura-single-courses-content .tutor-course-details-title {
+  font-size: 42px;
+  line-height: 50px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.aura-single-courses-content .aura-course-single-title {
+  font-size: 42px;
+  line-height: 50px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.aura-single-courses-content .tutor-course-details-header .tutor-course-details-title {
+  font-size: 42px;
+  line-height: 50px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .aura-single-courses-content p {
   font-size: 18px;
@@ -537,9 +616,18 @@ body[auraclass="aura-body-single-post"] .aura_single_post .entry-content blockqu
   font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 16px;
 }
-.aura-single-lesson-content p {
-  font-size: 18px;
-  line-height: 28px;
+.aura-single-lesson-content h2 {
+  font-size: 28px;
+  line-height: 42px;
   font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin-bottom: 16px;
+}
+.aura-single-lesson-content h3 {
+  font-size: 24px;
+  line-height: 42px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.aura-single-lesson-title {
+  font-size: 42px;
+  line-height: 50px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

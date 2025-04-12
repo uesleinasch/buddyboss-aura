@@ -1,9 +1,5 @@
 // out: false
 
-/* ==========================================================================
-   Estilos para Blog - Aura Theme
-   Otimizado com mixins parametrizados
-   ========================================================================== */
 
 // Mixin para estilos básicos de conteúdo de blog
 .blog-content-styles(@content-class) {
@@ -80,13 +76,14 @@
       line-height: @line-height-md;
       font-family: @font-family-ui;
       color: @primary-font-color;
+      font-weight: @font-weight-light;
       
       .entry-title {
         font-size: @font-size-heading-xl;
         color: @primary-font-color;
         line-height: @line-height-heading-xl;
         font-family: @font-family-heading;
-        margin-bottom: @vertical-spacing-md;
+
       }
       
       .post-related-posts {
@@ -99,19 +96,12 @@
           color: @primary-font-color;
           line-height: @line-height-heading-lg;
           font-family: @font-family-heading;
-          margin-bottom: @vertical-spacing-md;
+
         }
         
         .post-inner-wrap {
           background: @tertiary-color;
           border: 1px solid @primary-accent-color;
-          padding: @vertical-spacing-sm;
-          border-radius: 4px;
-          transition: transform 0.2s ease;
-          
-          &:hover {
-            transform: translateY(-3px);
-          }
         }
         
         .entry-title a {
@@ -124,38 +114,25 @@
             color: @primary-accent-color;
           }
         }
-        
         .entry-content {
           font-size: @font-size-sm;
           line-height: @line-height-sm;
           font-family: @font-family-ui;
           color: @primary-font-color;
         }
-        
-        // Layout em grid para posts relacionados
-        .related-posts-list {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-          grid-gap: @vertical-spacing-md;
-          margin-top: @vertical-spacing-md;
-        }
       }
-      
-      // Elementos de conteúdo
-      .entry-content {
-        img {
-          max-width: 100%;
-          height: auto;
-          border-radius: 4px;
-        }
-        
-        blockquote {
-          border-left: 3px solid @primary-accent-color;
-          padding-left: @vertical-spacing-md;
-          font-style: italic;
-          color: @secondary-font-color;
-          margin: @vertical-spacing-md 0;
-        }
+
+      h2{
+        font-size: @font-size-xxl;
+        color: @primary-font-color;
+        line-height: @line-height-lg;
+        font-family: @font-family-ui;
+      }
+      h3{
+        font-size: @font-size-xl;
+        color: @primary-font-color;
+        line-height: @line-height-lg;
+        font-family: @font-family-ui;
       }
     }
   }

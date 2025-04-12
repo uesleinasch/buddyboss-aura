@@ -27,7 +27,7 @@ if ( tutor_utils()->get_option( 'enable_course_about', true, true ) ) {
 	<?php if ( ! empty( $string ) ) : ?>
 		
 	<div class="tutor-course-details-content<?php echo $has_show_more ? ' tutor-toggle-more-content tutor-toggle-more-collapsed' : ''; ?>"<?php echo $has_show_more ? ' data-tutor-toggle-more-content data-toggle-height="200" style="height: 200px;"' : ''; ?>>
-		<h2 class="tutor-fs-5 tutor-fw-bold tutor-color-black tutor-mb-12">
+		<h2 class="aura-course-single-title tutor-fs-5 tutor-fw-bold tutor-color-black tutor-mb-12">
 			<?php echo esc_html( apply_filters( 'tutor_course_about_title', __( 'About Course', 'tutor' ) ) ); ?>
 		</h2>
 		
