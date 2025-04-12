@@ -13,9 +13,11 @@
  */
 
 get_header();
+// get post type
+$post_type = ' aura__view__'.get_post_type();
 ?>
 
-    <div id="primary" class="content-area bb-grid-cell">
+    <div id="primary" class="content-area bb-grid-cell <?php echo esc_attr( $post_type ); ?>">
         <main id="main" class="site-main">
 
 			<?php if ( have_posts() ) :
