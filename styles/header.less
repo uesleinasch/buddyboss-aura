@@ -1,55 +1,99 @@
 // out: false
 
-.aura-page-header{
-  background-color: @primary-color;
-}
-.aura-page-header .site-title  {
-  color: @primary-font-color;
-}
-.aura-page-header  .site-header-container .site-title>a {
-  color: @primary-font-color;
-}
-.aura-page-header  .header-aside i {
-  color: @primary-font-color;
-}
-.sticky-header .aura-page-header{
-  box-shadow: none;
+// Mixin para estilos básicos de cabeçalho
+.header-base-styles(@header-class) {
+  .@{header-class} {
+    background-color: @primary-color;
+    
+    .site-title {
+      color: @primary-font-color;
+    }
+    
+    .site-header-container .site-title > a {
+      color: @primary-font-color;
+    }
+    
+    .header-aside i {
+      color: @primary-font-color;
+    }
+  }
+  
+  .sticky-header {
+    .@{header-class} {
+      box-shadow: none;
+      
+      &.has-scrolled {
+        box-shadow: none;
+      }
+    }
+  }
 }
 
-.sticky-header .aura-page-header.has-scrolled{
-  box-shadow: none;
-} 
-body[auraclass="aura-body-page"] .aura-page-header .user-wrap.menu-item-has-children .user-link .user-name {
-  color: @primary-font-color;
+// Mixin para estilos de usuário e submenu
+.user-submenu-styles(@body-class, @header-class) {
+  body[auraclass="@{body-class}"] {
+    .@{header-class} {
+      .user-wrap.menu-item-has-children {
+        .user-link {
+          .user-name {
+            color: @primary-font-color;
+          }
+        }
+        
+        &.selected > .user-link:before {
+          background-color: @primary-color;
+        }
+        
+        > .user-link:hover:before {
+          background-color: @secondary-color;
+        }
+      }
+      
+      .sub-menu {
+        background-color: @secondary-color;
+        
+        li:hover > a {
+          background-color: @primary-color;
+          color: @primary-font-color;
+        }
+      }
+      
+      .wrapper li .wrapper .ab-submenu {
+        background-color: @primary-color;
+        color: @primary-font-color;
+      }
+    }
+    
+    // Estilos globais para sub-menus dentro do contexto do body
+    .sub-menu a {
+      color: @primary-font-color;
+    }
+    
+    .user-wrap-container .sub-menu-inner > li > a {
+      color: @primary-font-color;
+    }
+  }
 }
 
-body[auraclass="aura-body-page"] .aura-page-header .user-wrap.menu-item-has-children.selected>.user-link:before{
-  background-color: @primary-color;
-}
-
-body[auraclass="aura-body-page"] .aura-page-header .user-wrap.menu-item-has-children>.user-link:hover:before {
-
+// Estilo global para submenu do site-header
+.site-header ul.submenu {
   background-color: @secondary-color;
-
-}
-body[auraclass="aura-body-page"] .aura-page-header .sub-menu, .site-header ul.submenu {
-
-  background-color: @secondary-color;
-
 }
 
-body[auraclass="aura-body-page"] .aura-page-header  .sub-menu li:hover>a {
-  background-color: @primary-color;
-  color: @primary-font-color;
-}
-body[auraclass="aura-body-page"] .aura-page-header .wrapper li .wrapper .ab-submenu{
-  background-color: @primary-color;
-  color: @primary-font-color;
-}
+// Aplicando os mixins para aura-page-header
+.header-base-styles(aura-page-header);
+.user-submenu-styles(aura-body-page, aura-page-header);
 
-body[auraclass="aura-body-page"] .sub-menu a {
-  color: @primary-font-color;
-}
-body[auraclass="aura-body-page"]  .user-wrap-container .sub-menu-inner>li>a {
-  color: @primary-font-color;
-}
+// Aplicando os mixins para aura-archive-post-header
+.header-base-styles(aura-archive-post-header);
+.user-submenu-styles(aura-body-archive-post, aura-archive-post-header);
+
+.header-base-styles(aura-single-post-header);
+.user-submenu-styles(aura-body-single-post, aura-single-post-header);
+
+.header-base-styles(aura-single-courses-header);
+.user-submenu-styles(aura-body-single-courses, aura-single-courses-header);
+
+.header-base-styles(aura-single-lesson-header);
+.user-submenu-styles(aura-body-single-lesson, aura-single-lesson-header);
+

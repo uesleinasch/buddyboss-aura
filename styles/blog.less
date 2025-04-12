@@ -1,0 +1,147 @@
+// out: false
+
+
+// Mixin para estilos básicos de conteúdo de blog
+.blog-content-styles(@content-class) {
+  .@{content-class} {
+    background: @primary-color;
+    
+    .post-inner-wrap {
+      background: @tertiary-color;
+      border: 1px solid @primary-accent-color;
+      transition: box-shadow 0.2s ease;
+      
+      &:hover {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+// Mixin para estilos de títulos e textos em blog
+.blog-typography-styles(@body-class, @content-class) {
+  body[auraclass="@{body-class}"] {
+    .aura_entry_content .entry-title a {
+      font-size: @font-size-xxl;
+      color: @primary-font-color;
+      line-height: @line-height-heading-lg;
+      font-family: @font-family-heading;
+      font-weight: @font-weight-bold;
+      
+      &:hover {
+        color: @primary-accent-color;
+      }
+    }
+    
+    .@{content-class} {
+      .page-title {
+        font-size: @font-size-heading-xl;
+        color: @primary-font-color;
+        line-height: @line-height-heading-xl;
+        font-family: @font-family-heading;
+        margin-bottom: @vertical-spacing-md;
+      }
+      
+      .entry-content p {
+        font-size: @font-size-md;
+        line-height: @line-height-md;
+        font-family: @font-family-ui;
+        color: @primary-font-color;
+        margin-bottom: @vertical-spacing-sm;
+      }
+      
+      // Meta informações
+      .entry-meta {
+        color: @secondary-font-color;
+        font-size: @font-size-xs;
+        margin-bottom: @vertical-spacing-sm;
+        
+        a {
+          color: @secondary-font-color;
+          
+          &:hover {
+            color: @primary-accent-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mixin para posts individuais
+.single-post-styles(@body-class) {
+  body[auraclass="@{body-class}"] {
+    .aura_single_post {
+      font-size: @font-size-md;
+      line-height: @line-height-md;
+      font-family: @font-family-ui;
+      color: @primary-font-color;
+      font-weight: @font-weight-light;
+      
+      .entry-title {
+        font-size: @font-size-heading-xl;
+        color: @primary-font-color;
+        line-height: @line-height-heading-xl;
+        font-family: @font-family-heading;
+
+      }
+      
+      .post-related-posts {
+        margin-top: @vertical-spacing-xl;
+        padding-top: @vertical-spacing-lg;
+        border-top: 1px solid @border-color-light;
+        
+        h3 {
+          font-size: @font-size-heading-lg;
+          color: @primary-font-color;
+          line-height: @line-height-heading-lg;
+          font-family: @font-family-heading;
+
+        }
+        
+        .post-inner-wrap {
+          background: @tertiary-color;
+          border: 1px solid @primary-accent-color;
+        }
+        
+        .entry-title a {
+          font-size: @font-size-xl;
+          color: @primary-font-color;
+          line-height: @line-height-xl;
+          font-family: @font-family-heading;
+          
+          &:hover {
+            color: @primary-accent-color;
+          }
+        }
+        .entry-content {
+          font-size: @font-size-sm;
+          line-height: @line-height-sm;
+          font-family: @font-family-ui;
+          color: @primary-font-color;
+        }
+      }
+
+      h2{
+        font-size: @font-size-xxl;
+        color: @primary-font-color;
+        line-height: @line-height-lg;
+        font-family: @font-family-ui;
+      }
+      h3{
+        font-size: @font-size-xl;
+        color: @primary-font-color;
+        line-height: @line-height-lg;
+        font-family: @font-family-ui;
+      }
+    }
+  }
+}
+
+/* Aplicando os mixins para posts de arquivo */
+.blog-content-styles(aura-archive-post-content);
+.blog-typography-styles(aura-body-archive-post, aura-archive-post);
+
+/* Aplicando os mixins para post individual */
+.blog-content-styles(aura-single-post-content);
+.single-post-styles(aura-body-single-post);
